@@ -48,7 +48,7 @@ const sendPaperToEmail = async (email: string, titles: Array<string>) => {
       const renderedHtml = ejs.render(template, { titles });
       await sendMail(
         ["zaid.tab123@gmail.com"],
-        "Your Research Paper from Paperpilot",
+        "Your Research Paper from PaperGo",
         renderedHtml!
       );
     } catch (error) {

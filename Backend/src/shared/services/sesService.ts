@@ -35,9 +35,9 @@ export const sendMail = async (
         Charset: "utf-8",
       },
     },
-    Source: "paperpilot.srm@gmail.com" /* required */,
+    Source: "PaperGo.srm@gmail.com" /* required */,
     ReplyToAddresses: [
-      "paperpilot.srm@gmail.com",
+      "PaperGo.srm@gmail.com",
       /* more items */
     ],
   };

@@ -28,7 +28,7 @@ function Login() {
     return (
       <div className="w-[100%] h-[100%] flex flex-col items-center justify-center">
         <div className="font-bold text-2xl mb-8 text-black font-roboto_bold text-center ">
-          Welcome to PaperPilot!
+          Welcome to PaperGo!
         </div>
         <button
           onClick={() => loginWithRedirect()}

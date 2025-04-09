@@ -99,7 +99,7 @@ function Landing() {
               {/* adding logo */}
               <div className="font-racing display flex text-3xl sm:text-3xl lg:text-5xl text-[#D4D4D4]">
                 <img src={Logo} alt="logo" className="pr-4" />
-                Paperpilot
+                PaperGo
               </div>
 
               {/* add tagline */}
