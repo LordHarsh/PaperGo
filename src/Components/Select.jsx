@@ -18,8 +18,8 @@ function Select(props) {
       email: user.email,
       interests: selectedButtonNames,
     };
-
-    fetch("http://localhost:5050", {
+    console.log(data);
+    fetch("http://localhost:5050/api/predict", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

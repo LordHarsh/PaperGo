@@ -8,8 +8,15 @@ interface JsonData {
   [key: string]: string[][];
 }
 
+// Use relative path for development or absolute path for production
+const getRecommendationsPath = () => {
+  return process.env.NODE_ENV === "production" 
+    ? path.join(process.cwd(), "build/shared/recommendations.json")
+    : "./src/shared/recommendations.json";
+};
+
 const paperRecommendationsjson = fs.readFileSync(
-  "./src/shared/recommendations.json",
+  getRecommendationsPath(),
   "utf-8"
 );
 const paperRecommendations: JsonData = JSON.parse(paperRecommendationsjson);
@@ -38,24 +45,31 @@ const PredictPapers = async (interests: string[]) => {
   return randomData;
 };
 
-const sendPaperToEmail = async (email: string, titles: Array<string>) => {
+const sendPaperToEmail = async (email: string, titles: Array<string>, randomData: any) => {
   try {
-    const template = await fsp.readFile(
-      path.join(__dirname, "../../shared/templates/emailTemplate.ejs"),
-      "utf8"
-    );
+    // Use correct path resolution that works in both development and production
+    const templatePath = process.env.NODE_ENV === "production"
+      ? path.join(process.cwd(), "build/shared/templates/emailTemplate.ejs")
+      : path.join(process.cwd(), "src/shared/templates/emailTemplate.ejs");
+    
+    console.log("Template path:", templatePath);
+    
+    const template = await fsp.readFile(templatePath, "utf8");
     try {
-      const renderedHtml = ejs.render(template, { titles });
+      console.log("randomData:", randomData);
+      const renderedHtml = ejs.render(template, { data: titles, randomData });
       await sendMail(
-        ["zaid.tab123@gmail.com"],
+        [email],
         "Your Research Paper from PaperGo",
         renderedHtml!
       );
     } catch (error) {
+      console.error("Template rendering error:", error);
       throw Error("Error in Generating Template");
     }
   } catch (error) {
-    console.log(error);
+    console.log("File read error:", error);
+    throw Error(`Failed to read email template: ${error.message}`);
   }
 };
 
