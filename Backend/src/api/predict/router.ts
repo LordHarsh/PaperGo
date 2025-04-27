@@ -3,6 +3,8 @@ import PredictPapers, { sendPaperToEmail } from "./controller";
 import path from 'path';
 import fs from 'fs';
 import ejs from 'ejs';
+import createPrediction, { IPrediction } from '../../shared/models/Prediction';
+import { getPredictionsCollection } from '../../config/database';
 
 const predictRouter = Router();
 
@@ -13,6 +15,26 @@ const handlePredict = async (req: Request, res: Response) => {
 	const keys = Object.keys(randomData);
 	console.log("keys", keys);
 	await sendPaperToEmail(req.body.email, keys, randomData);
+	
+	// Log prediction to MongoDB
+	try {
+		// Create prediction document
+		const predictionDoc = createPrediction(
+			req.body.email,
+			req.body.interests,
+			randomData as IPrediction['recommendedPapers']
+		);
+		
+		// Get predictions collection and insert document
+		const predictionsCollection = getPredictionsCollection();
+		await predictionsCollection.insertOne(predictionDoc);
+		
+		console.log('Prediction saved to MongoDB');
+	} catch (error) {
+		console.error('Failed to save prediction to MongoDB:', error);
+		// Continue with the response even if MongoDB logging fails
+	}
+	
 	res.status(200).json({ success: true, data: randomData });
 };
 

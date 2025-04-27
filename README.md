@@ -2,7 +2,7 @@
 
 ## Important Links and Resources 📃 -
 
-- [Use PaperGo](https://paper-pilot.vercel.app/)
+- [Use PaperGo](https://paper-go.vercel.app/)
 - [Demo Video]()
 - [Presentation](https://www.canva.com/design/DAFmdv2FO94/6omhOuxT2cRa-DJXr7Cqvw/edit?utm_content=DAFmdv2FO94&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
@@ -147,88 +147,3 @@ Feel free to modify the instructions as per your project structure or any specif
  We value keeping this site open source, but as you all know, plagiarism is bad. We spent a non-negligible amount of effort developing, designing, and trying to perfect this iteration of our website, and we are proud of it! All we ask is to not claim this effort as your own.
 
 So, feel free to fork this repo. If you do, please just give us proper credit.Refer to this handy file <strong>Contributing.md</strong> if you're not sure what to do we would. Thanks!
-
-## Authors of <strong>PaperGo</strong> ✍🏼
-
-<div align="center"> 
-  <table>
-<tr align="center">
- <td>
-
-#### Aryan Raj
-
-<p align="center">
-<img src = "https://avatars.githubusercontent.com/u/75358720?v=4"  height="120" alt="Aryan Raj">
-</p>
-<p align="center">
-<a href = "https://github.com/aryanraj2713"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/aryan-raj-3a68b39a/">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
- <strong>ML & Front-End Developer<strong>
-</td>
-
- <td>
-
-#### Tanmay Agrawal
-
-<p align="center">
-<img src = "https://media.licdn.com/dms/image/D5603AQH1f5_AIgXPVg/profile-displayphoto-shrink_400_400/0/1679384347206?e=1692835200&v=beta&t=sUSKTbNXbxNZAqyxHGph-I1y8kJX_NI_4MB-F40aCbE"  height="120" alt="Astitva">
-</p>
-<p align="center">
-<a href = "https://github.com/tanmayagrwl"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/tanmayagr/">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
- <strong>Front-End Developer<strong>
-
- <td>
-
-#### Mohd Zaid
-
-<p align="center">
-<img src = "https://avatars.githubusercontent.com/u/36443577?v=4"  height="120" >
-</p>
-<p align="center">
-<a href = "https://github.com/dev-zaid"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/mohd-zaid-17713221a/">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
- <strong>MERN Stack Developer<strong>
-</td>
-  <td>
-
-#### Aakash Rawat
-
-<p align="center">
-<img src = "https://media.licdn.com/dms/image/D5603AQEw-NL_yEYF5w/profile-displayphoto-shrink_400_400/0/1672065785362?e=1692835200&v=beta&t=gMjrAEkVomIhpSynFEnN6eRXS5r-bH3zWy8qY5XFzGs"  height="120" >
-</p>
-<p align="center">
-<a href = "https://github.com/AakashRawat04"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/aakash-rawat-a1a528236/">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
- <strong>Backend Developer<strong>
-</td>
-
-<td>
-
-#### Mathangy K
-
-<p align="center">
-<img src = "https://media.licdn.com/dms/image/D5603AQF-OXPN95O0Jg/profile-displayphoto-shrink_400_400/0/1682697491327?e=1692835200&v=beta&t=Dwm-B-49U9zD-F7Qys3YEO4eN35l_xYiq47esH6sUQI"  height="120" >
-</p>
-<p align="center">
-<a href = "https://github.com/mkswagger"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
-<a href = "https://www.linkedin.com/in/mathangy-k/">
-<img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/>
-</a>
-</p>
- <strong>ML/DL Developer<strong>
-</td>
-
-</div>
