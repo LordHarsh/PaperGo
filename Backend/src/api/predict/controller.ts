@@ -56,6 +56,14 @@ const sendPaperToEmail = async (email: string, titles: Array<string>, randomData
     
     const template = await fsp.readFile(templatePath, "utf8");
     try {
+      // randomData = randomData.map((item: any) => ({
+      //   title: item.title,
+      //   id: item.id,
+      //   link: `https://www.google.com/search?q=${encodeURIComponent(item.title)}`
+      // }));
+      for (const key in randomData) {
+        randomData[key].link = `https://www.google.com/search?q=${encodeURIComponent(randomData[key].title)}`;
+      }
       console.log("randomData:", randomData);
       const renderedHtml = ejs.render(template, { data: titles, randomData });
       await sendMail(
