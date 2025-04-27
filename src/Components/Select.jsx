@@ -19,6 +19,7 @@ function Select(props) {
       interests: selectedButtonNames,
     };
     console.log(data);
+    console.log(`${import.meta.env.VITE_BACKEND_ENDPOINT}/api/predict`);
     fetch(`${import.meta.env.VITE_BACKEND_ENDPOINT}/api/predict`, {
       method: "POST",
       headers: {
